@@ -51,7 +51,7 @@ namespace TodoListLibrary
                 t.Print();
             }
 
-            Console.WriteLine("");
+            Console.WriteLine();
         }
 
         public void PrintByPriority()
@@ -65,7 +65,18 @@ namespace TodoListLibrary
             {
                 t.Print();
             }
-            Console.WriteLine("");
+            Console.WriteLine();
+        }
+
+        //prints all including done ones
+        public void PrintAll()
+        {
+            Console.WriteLine("Printing all, including done...");
+            foreach (Todo t in list)
+            {
+                t.Print();
+            }
+            Console.WriteLine();
         }
 
         //filter only undone
