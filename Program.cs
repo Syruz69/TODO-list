@@ -39,6 +39,7 @@ namespace TODO_list
             list.AddToList(todo4, todo5);
             list.PrintByDate();
 
+            list.PrintAll();
 
             Console.ReadLine();
         }
